@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="form-content">
+        <div class="row m-0">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="main-content">
+                    <form class="temp-form">
+                        <input type="text" name="text" id="text" placeholder="Enter Your City Name :"
+                            autocomplete="off">
+                        <input type="submit" value="Search" id="submitbtn"> </input>
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top-layer">
+                        <p class="day">Friday</p>
+                        <p class="today">22</p>
+                    </div>
+                    <div class="main-layer">
+                        <p id="city_name">
+                            Get Output Here
+                        </p>
+                        <div class="middle-layer">
+                            <p><span id="temp">0</span><sup>o</sup>C</p>
+                            <p id="temp_status"> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    {{>footer}}
+
+    {{>scripts}}
+
+</body>
+
+</html>
