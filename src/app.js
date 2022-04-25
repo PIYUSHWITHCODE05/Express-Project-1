@@ -4,11 +4,11 @@ const path = require("path")
 const hbs = require("hbs")
 const port = 3000
 
-app.use(express.static(path.join(__dirname, "./public")))
+app.use(express.static(path.join(__dirname, "../public")))
 
 app.set("view engine", "hbs")
-app.set("views", path.join(__dirname, "./tamplates/views"))
-hbs.registerPartials(path.join(__dirname, "./tamplates/partials"))
+app.set("views", path.join(__dirname, "../tamplates/views"))
+hbs.registerPartials(path.join(__dirname, "../tamplates/partials"))
 
 app.get("/", (req, res) => {
     res.render("index");
